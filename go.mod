@@ -1,3 +1,3 @@
-module github.com/divinerites/plausible-hugo
+module github.com/steve-winter/plausible-hugo
 
 go 1.14
