@@ -41,6 +41,10 @@
 {{- end }}
 {{- $pio_script = printf "%s%s%s" $pio_script $downloads $outbound }}
 
+{{- if site.Params.plausible.js_filename }}
+    {{- $pio_script = site.Params.plausible.js_filename }}
+{{- end }}
+
 <!-- Active plausible : if option is "on" and for allowed pages -->
 {{- if and (site.Params.plausible.enable) (not .Params.plausible_do_not_track) }}
 
